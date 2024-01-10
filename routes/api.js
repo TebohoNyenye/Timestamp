@@ -3,8 +3,8 @@ var router = express.Router();
 
 // Timestamp Microservice
 // Timestamp Microservice
-router.get('/:date_string?', (req, res) => {
-  let input = req.params.date_string;
+router.get('/:date?', (req, res) => {
+  let input = req.params.date;
   let date;
 
   if (!input) {
